@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Attraction{% endblock %}
+
+{% block body %}
+
+    {% for attraction in attractions %}
+        {{ attraction.id }} - {{ attraction.name }}
+    {% endfor %}
+
+{% endblock %}
